@@ -12,9 +12,7 @@ license=('GPL3')
 depends=(
     'avahi'
     'ffmpeg'
-    'libdvbcsa'
     'libfdk-aac'
-    'libhdhomerun'
     'openssl'
     'pcre2'
     'uriparser'
@@ -83,8 +81,8 @@ build() {
         --enable-uriparser \
         --enable-dvben50221 \
         --enable-dbus_1 \
-        --disable-hdhomerun_static --enable-hdhomerun_client \
-        --enable-tvhcsa
+        --disable-hdhomerun_static --disable-hdhomerun_client \
+        --disable-tvhcsa
     make
 }
 
