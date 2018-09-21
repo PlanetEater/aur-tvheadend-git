@@ -1,9 +1,9 @@
 # Maintainer: Dan Ziemba <zman0900@gmail.com>
 # Contributor: Benjamin Hedrich <kiwisauce (a) pagenotfound (dot) de>
 
-pkgname=tvheadend-git
+pkgname=tvheadend-git-my
 _gitname='tvheadend-git'
-pkgver=4.3.r1292.g9b9ee6859
+pkgver=4.3
 pkgrel=1
 pkgdesc="TV streaming server for Linux"
 arch=('i686' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
@@ -32,7 +32,7 @@ install=tvheadend.install
 backup=('etc/conf.d/tvheadend')
 
 source=(
-    "${_gitname}::git+https://github.com/tvheadend/tvheadend.git#branch=master"
+    "${_gitname}::git+https://github.com/planeteater/tvheadend.git#branch=master"
     'dvb-scan-tables::git+https://github.com/tvheadend/dtv-scan-tables.git#branch=tvheadend'
 )
 md5sums=(
